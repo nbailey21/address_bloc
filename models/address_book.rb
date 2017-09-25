@@ -20,3 +20,4 @@ require_relative 'entry'
             entries.insert(index, Entry.new(name, phone_number, email))
         end
     end
+
