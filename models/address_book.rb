@@ -48,5 +48,21 @@ require "csv"
             end
             return nil
         end
+        
+        def iterative_search(name)
+            lower = 0
+            upper = entries.length - 1
+            
+            while lower <= upper
+                it_name = entries[lower].name
+                
+                if name == it_name
+                    return entries[lower]
+                else
+                    lower += 1
+                end
+            end
+            return nil
+        end
     end
 
