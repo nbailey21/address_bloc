@@ -48,5 +48,10 @@ require "csv"
             end
             return nil
         end
+        
+        def demolish
+           @entries = []
+           puts "All entries have been deleted"
+        end
     end
 
